@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+:root{
+    --wb-color-background: #192026;
+    --wb-color-text: #FFFFFF;
+    --wb-color-text-opacity: #858585;
+    --wb-color-active: #FFFFFF;
+    --wb-color-surface: #1E262D;
+    --wb-color-header: #192026;
+    --wb-color-footer: #1E2641;
+
+    --wb-nav-top-height: 58px;
+    --wb-max-site-width: 1280px;
+    --wb-footer-height: 150px;
+}
+
+body{
+    background-color: var(--wb-color-background);
+}
+
+p{
+    color: var(--wb-color-text);
+}
+
+#header{
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: var(--wb-color-header);
+}
+
+#nav-top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 10px;
+    width: 100%;
+    height: var(--wb-nav-top-height);
+    padding: 0 20px;
+    max-width: var(--wb-max-site-width);
+    margin: 0 auto;
+}
+
+.nav-top-bar-middle{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.nav-top-bar-middle > ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-wrap: nowrap;
+}
+
+.nav-top-bar-middle ul li{
+    position: relative;
+}
+
+.menu-item{
+    cursor: pointer;
+    color: var(--wb-color-text-opacity);
+    padding: 8px 30px;
+    max-width: 150px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .2s;
+    white-space: nowrap;
+}
+
+.menu-item:hover,
+.menu-item.active{
+    color: var(--wb-color-active);
+}
+
+.sub-menu-list{
+    position: absolute;
+    top: 35px;
+    padding: 10px;
+    border-radius: 10px;
+    list-style: none;
+    list-style-position: inside;
+    background-color: var(--wb-color-surface);
+    display: none;
+}
+
+.sub-menu-list.active{
+    display: block;
+}
+
+.sub-menu-list > li > a{
+    display: block;
+    color: var(--wb-color-text-opacity);
+    border-radius: 5px;
+    height: 100%;
+    text-decoration: none;
+    transition: .2s;
+    padding: 8px 10px;
+}
+
+.sub-menu-list li a:hover{
+    color: var(--wb-color-active);
+}
+
+.search-box form{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 35px;
+    padding: 0 15px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid #1E2641;
+    background-color: var(--wb-color-surface);
+}
+
+.search-box-input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    color: var(--wb-color-text);
+    background-color: transparent;
+}
+
+.search-box-btn{
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    color: var(--wb-color-text);
+    background-color: transparent;
+}
+
+.nav-top-bar-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sign-in-btn{
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 10px;
+    white-space: nowrap;
+    border: 1px solid #ddd;
+}
+
+.menu-btn{
+    display: none;
+    cursor: pointer;
+    color: var(--wb-color-text);
+}
+
+#main-content{
+    min-height: calc(100vh - var(--wb-nav-top-height) - var(--wb-footer-height));
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--wb-color-text-opacity);
+    height: var(--wb-footer-height);
+    background-color: var(--wb-color-footer);
+}
+
+@media screen and (max-width: 1200px) {
+    /* .search-box{
+        display: none;
+    } */
+}
+
+@media screen and (max-width: 810px) {
+    .menu-btn{
+        display: block;
+    }
+
+    .nav-top-bar-middle{
+        display: none;
+    }
+
+    .nav-top-bar-middle.active{
+        position: absolute;
+        left: 0;
+        top: 58px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 15px;
+        width: 100%;
+        padding: 10px 10px;
+        padding-bottom: 20px;
+        background-color: var(--wb-color-surface);
+    }
+
+    .nav-top-bar-middle > ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        list-style: outside;
+    }
+
+    .nav-top-bar-middle > ul li::marker{
+        display: none;
+    }
+
+    .menu-item{
+        padding: 5px;
+    }
+
+    .sub-menu-list.active{
+        position: static;
+        margin-left: 30px;
+        background-color: transparent;
+    }
+}

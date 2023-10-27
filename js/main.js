@@ -1,0 +1,39 @@
+const categoriesBtn = document.getElementById("categories-btn");
+const subMenuList = document.getElementById("sub-menu-list");
+if(categoriesBtn){
+    categoriesBtn.addEventListener("click",(e)=>{
+        e.stopPropagation();
+        subMenuList.classList.toggle("active");
+    })
+}
+
+const signinBtn = document.getElementById("sign-in-btn");
+
+if(signinBtn){
+    signinBtn.addEventListener('click',()=>{
+        window.location.assign("login.html")
+    })
+}
+
+const menuBtn = document.getElementById("menu-btn");
+const navTopMiddle = document.getElementById('nav-top-bar-middle');
+
+if(menuBtn && navTopMiddle){
+    menuBtn.addEventListener('click',()=>{
+        navTopMiddle.classList.toggle("active");
+    })
+}
+
+document.addEventListener("click", function (e) {
+    if(subMenuList){
+        if(!subMenuList.contains(e.target) && !categoriesBtn.contains(e.target)) {
+            subMenuList.classList.remove("active");
+        }
+    }
+
+    if(navTopMiddle){
+        if(!navTopMiddle.contains(e.target) && !menuBtn.contains(e.target)) {
+            navTopMiddle.classList.remove('active');
+        }
+    }
+});
