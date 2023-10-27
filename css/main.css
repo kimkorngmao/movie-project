@@ -164,6 +164,7 @@ p{
 }
 
 #main-content{
+    margin: 0 auto;
     max-width: var(--wb-max-site-width);
     min-height: calc(100vh - var(--wb-nav-top-height) - var(--wb-footer-height));
 }
