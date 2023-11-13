@@ -1,9 +1,7 @@
 
-#main-content{
-    height: 1100px;
+.main-content{
     width: 100%;
-    padding:30px;
-    box-sizing: border-box;
+    max-width: 100% !important;
     display: flex;
     justify-content: center;
     background-color: var(--wb-color-footer);
