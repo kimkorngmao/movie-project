@@ -72,4 +72,4 @@ updateImage();
 // Automatic slideshow every 2 seconds
 intervalId = setInterval(() => {
   nextImage();
-}, 2000);
+}, 3000);
