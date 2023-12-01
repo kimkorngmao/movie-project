@@ -11,16 +11,19 @@
     background-size: cover;
     background-position: center;
 }
+
 .about-us-bg1{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
+
 #main-content .container{
     width: 90%;
     /* background-color: tomato; */
     height: 1060px;
 }
+
 #main-content .container .box1{
     width: 100%;
     height: 500px;
