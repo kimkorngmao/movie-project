@@ -118,7 +118,7 @@ p{
     color: var(--wb-color-active);
 }
 
-.search-box form{
+/* .search-box form{
     display: flex;
     flex-wrap: nowrap;
     height: 35px;
@@ -146,12 +146,17 @@ p{
     outline: 0;
     color: var(--wb-color-text);
     background-color: transparent;
-}
+} */
 
 .nav-top-bar-right{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+}
+
+.search-btn{
+    cursor: pointer;
+    color: var(--wb-color-text);
 }
 
 .sign-in-btn{

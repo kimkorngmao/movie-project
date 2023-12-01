@@ -7,10 +7,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-image:url(https://cdn.dribbble.com/users/2145141/screenshots/16970303/vox_copy.png?resize=400x0);  */
+    /* background-image:url(https://cdn.dribbble.com/users/2145141/screenshots/16970303/vox_copy.png?resize=400x0); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     height: calc(100vh - var(--wb-nav-top-height) - var(--wb-footer-height)) ;
 }
 #contact-form {
