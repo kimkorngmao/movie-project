@@ -215,18 +215,15 @@ h3{
 }
 .des-list{
     width: 100%;
-    min-height: auto;
-    max-height: 320px;
+    height: 250px;
     margin-top: 10px;
-    display: grid;
+    display: flex;
     gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    overflow-x: scroll;
 }
 .box{
-    width: 100%;
-    height: auto;
-    aspect-ratio: 2/3;
-    max-width: 220px;
+    max-width: 164px;
+    min-width: 164px;
     float: left;
     position: relative;
     overflow: hidden;
