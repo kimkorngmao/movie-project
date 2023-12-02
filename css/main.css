@@ -157,6 +157,7 @@ p{
 
 .search-btn{
     cursor: pointer;
+    font-size: 24px;
     color: var(--wb-color-text);
 }
 
@@ -171,6 +172,7 @@ p{
 .menu-btn{
     display: none;
     cursor: pointer;
+    font-size: 24px;
     color: var(--wb-color-text);
 }
 

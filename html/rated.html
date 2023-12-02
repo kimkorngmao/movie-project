@@ -58,17 +58,11 @@
             </div>
             <div class="nav-top-bar-right">
                 <div type="button" class="search-btn" onclick="openSearchPanel()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path
-                            d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"
-                            fill="currentColor"></path>
-                    </svg>
+                    <span class="ri-search-2-line"></span>
                 </div>
                 <button class="sign-in-btn" id="sign-in-btn">Sign In</button>
                 <div class="menu-btn" id="menu-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="currentColor"></path>
-                    </svg>
+                    <span class="ri-menu-2-fill"></span>
                 </div>
             </div>
         </div>
@@ -87,7 +81,8 @@
                 <button class="search-box-btn">
                     <span class="ri-search-2-line"></span>
                 </button>
-                <input type="text" oninput="showSearchClearBtn()" id="search-input">
+                <input type="text" oninput="showSearchClearBtn()" id="search-input"
+                    placeholder="Search for a show, movie, genre">
                 <button class="search-clear-btn" id="search-clear-btn" onclick="clearSearchInput()">
                     <span class="ri-close-fill"></span>
                 </button>

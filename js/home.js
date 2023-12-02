@@ -1,9 +1,9 @@
 const images = [
-  "https://i.ytimg.com/vi/k5aVcHpl_Xw/maxresdefault.jpg",
-  "https://i0.wp.com/blog.son-video.com/wp-content/uploads/2021/03/ZackSnyders_JusticeLeague_1200.jpg?fit=1200%2C675&ssl=1",
-  "https://wallpapersmug.com/download/1600x900/cce793/movie-poster-of-john-wick-3.jpg",
-  "https://images.hdqwalls.com/wallpapers/john-wick-chapter-2-2017-artwork-poster-ap.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8fe3LsgY9ZVJZsyKHoMLFnzvpwhNnrUIhHP4MYUL4eq7qmJ0Zzm8V6aNJ-NS7L_LYD4o&usqp=CAU"
+  "../image/home/image-slide-1.jpg",
+  "../image/home/image-slide-2.jpg",
+  "../image/home/image-slide-3.jpg",
+  "../image/home/image-slide-4.jpg",
+  "../image/home/image-slide-5.jpg"
 ];
 
 const slideImagePreview = document.getElementById("slide-image-preview");
