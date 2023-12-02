@@ -1,0 +1,117 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  margin-top: 30px;
+  padding: 30px;
+ 
+}
+.firstContent{
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.firstContent .imgaeBox{
+  min-width: 230px;
+  width: 230px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+ 
+}
+.firstContent .imgaeBox img{
+  min-width: 230px;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.firstContent .descriptionBox{
+  width: 950px;
+  height: 100%;
+  color: white;
+  margin-left: 20px;
+}
+.firstContent .descriptionBox h1{
+  font-size: 20px;
+}
+p{
+  letter-spacing: 1px;
+  margin-top: 3px;
+  line-height: 30px;
+  font-size: 13px;
+}
+i{
+  color: yellow;
+}
+.descriptionBox .playMovie{
+  margin-top: 10px;
+  width: 140px;
+  height: 35px;
+  background-color: red;
+  border-radius: 50px ;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+}
+.playMovie i{
+  color: white;
+  margin-top: 8px;
+}
+.playMovie:hover{
+  background-color: rgb(245, 86, 86);
+  cursor: pointer;
+}
+
+.secondContent{
+  width: 100%;
+  height: 40vh;
+  padding: 10px;
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 2000px) {
+  .firstContent{
+    display: flex;
+    justify-content: space-between;
+   
+   
+  }
+	.firstContent .imgaeBox{
+   min-width: 230px;
+  }
+  .firstContent .descriptionBox{
+    width: 950px;
+    margin-left: 30px;
+  }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.5px){ 
+	.firstContent .imgaeBox{
+    
+    min-width: 230px;
+    
+   
+  }
+  .firstContent .descriptionBox{
+    min-width: 508px;
+    
+  }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.firstContent .imgaeBox{
+    min-width: 230px;
+  
+  }
+  .firstContent .descriptionBox{
+    min-width: 497px;
+
+  }
+}
+
+}

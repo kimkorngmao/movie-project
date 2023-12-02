@@ -215,15 +215,16 @@ h3{
 }
 .des-list{
     width: 100%;
-    height: 250px;
     margin-top: 10px;
     display: flex;
+    justify-content: space-between;
     gap: 10px;
     overflow-x: scroll;
 }
 .box{
-    max-width: 164px;
-    min-width: 164px;
+    width: 100%;
+    min-width: 154px;
+    aspect-ratio: 2/3;
     float: left;
     position: relative;
     overflow: hidden;
@@ -299,17 +300,17 @@ h6:hover{
 h1{
     color: whitesmoke;
 }
-/* @media(max-width: 768px){
+@media(max-width: 768px){
     .category-menu .request-box h3{
         display: none;
     }
-    .list-name .text p{
+    /* .list-name .text p{
         font-size: 12px;
     }
     .list-name .icon span i{
         font-size: 17px;
-    }
-    .des-list .box{
+    } */
+    /* .des-list .box{
         width: 245px;
         height: 260px;
     }
@@ -320,8 +321,8 @@ h1{
     flex-direction: row;
     flex-flow:row wrap;
     justify-content: space-between;
-    }
-    .des-list .box{
+    } */
+    /* .des-list .box{
         width: 27%;
         height: 300px;
         
@@ -336,5 +337,5 @@ h1{
     }
     .des-list h6{
         font-size: 10px;
-    }
-} */
+    } */
+}
