@@ -7,6 +7,7 @@
     height: 7vh;
     display: flex;
     justify-content: space-between;
+    background-color: rgb(42, 37, 37);
 }
 .des-marque{
     width: 80%;
@@ -16,12 +17,11 @@
     align-items: center;
 }
 .request-box{
-    width: 20%;
     height: 100%;
+    white-space: nowrap;
     display: flex;
+    font-size: 0.5rem;
     background-color: rgb(42, 37, 37);
-    /* border-radius: 3%;
-    border: 1px solid gray; */
 }
 .request-box:hover{
     background-color: rgba(245, 245, 245, 0.11);
