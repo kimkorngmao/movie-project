@@ -188,15 +188,14 @@ h3{
     display: flex;
 }
 .text{
-    width: 17%;
-    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    color: var(--wb-color-text);
 }
-p{
-    color: whitesmoke;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 9px;
-}
+
 .icon{
     width: 3%;
     height: 100%;
@@ -216,16 +215,18 @@ p{
 }
 .des-list{
     width: 100%;
-    height: 41vh;
+    min-height: auto;
+    max-height: 320px;
     margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-flow:row wrap;
-    justify-content: space-between;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .box{
-    width: 18%;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/3;
+    max-width: 220px;
     float: left;
     position: relative;
     overflow: hidden;
@@ -244,15 +245,25 @@ img{
     transform: scale(1.1);
     transition: all 0.4s;
 }
-h6 {
-    font-size: 17px;
-    font-family: content;
-    color: white;
-    bottom: 0px;
+.detail {
     position: absolute;
-    text-shadow: 1px 1px 3px black;
-    background-color: rgba(0, 0, 0, 0.524);
+    left: 0;
+    bottom: 0px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.524);
+}
+
+h6{
+    font-size: 1rem;
+    font-family: content;
+    color: var(--wb-color-text);
+    text-shadow: 1px 1px 3px black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 h6:hover{
     cursor: pointer;
@@ -266,6 +277,8 @@ h6:hover{
 .seemore-text{
     width: 100%;
     height: 50%;
+    font-size: 0.8rem;
+    white-space: nowrap;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,7 +302,7 @@ h6:hover{
 h1{
     color: whitesmoke;
 }
-@media(max-width: 768px){
+/* @media(max-width: 768px){
     .category-menu .request-box h3{
         display: none;
     }
@@ -327,4 +340,4 @@ h1{
     .des-list h6{
         font-size: 10px;
     }
-}
+} */
