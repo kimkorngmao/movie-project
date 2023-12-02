@@ -309,6 +309,13 @@ p{
         display: block;
     }
 
+    .sub-menu-list{
+        display: block !important;
+        position: static !important;
+        margin-left: 30px;
+        background-color: transparent;
+    }
+
     .nav-top-bar-middle{
         display: none;
     }
@@ -341,11 +348,5 @@ p{
 
     .menu-item{
         padding: 5px;
-    }
-
-    .sub-menu-list.active{
-        position: static;
-        margin-left: 30px;
-        background-color: transparent;
     }
 }
