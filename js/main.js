@@ -11,7 +11,7 @@ const signinBtn = document.getElementById("sign-in-btn");
 
 if(signinBtn){
     signinBtn.addEventListener('click',()=>{
-        window.location.assign("login.html")
+        window.location.assign("../html/login.html")
     })
 }
 
