@@ -37,3 +37,27 @@ document.addEventListener("click", function (e) {
         }
     }
 });
+
+function openSearchPanel(){
+    const searchPanel = document.getElementById("search-panel");
+    searchPanel.classList.add("active");
+}
+
+function closeSearchPanel(){
+    const searchPanel = document.getElementById("search-panel");
+    searchPanel.classList.remove("active");
+}
+
+function showSearchClearBtn(){
+    const searchInputValue = document.getElementById("search-input").value;
+    const searchClearBtn = document.getElementById("search-clear-btn");
+    if(searchInputValue.length > 0){
+        searchClearBtn.classList.add("active");
+    }else{
+        searchClearBtn.classList.remove("active");
+    }
+}
+
+function clearSearchInput(){
+    document.getElementById("search-input").value = "";
+}
