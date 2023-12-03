@@ -18,10 +18,13 @@
     background: #ddd;
 }
 
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .form-popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
     z-index: 10;
     width: 100%;
     max-width: 400px;
@@ -29,16 +32,6 @@
     border: 2px solid #fff;
     border-radius: 2px;
     margin: 5px;
-    box-sizing: border-box;
-    transform: translate(-50%, -70%);
-}
-
-.form-popup .close-btn {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    color: #6e6868;
-    cursor: pointer;
 }
 
 .form-popup .form-box {
