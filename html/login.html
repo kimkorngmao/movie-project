@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login and Registration Form</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
-    <link rel="stylesheet" href="../css/main.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="../css/login.css">
-    <script src="../javascript/login.js" defer></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css"
+        integrity="sha512-GL7EM8Lf8kU23I3kTio2kRWt8YRDVIQcSZjRVtVRfk05kB/QvkyafuTC94Ev0X6qk7Z0r5s06c1lsP1p/ezDYw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
 </head>
+
 <body>
     <header id="header">
         <div id="nav-top-bar">
@@ -55,7 +61,7 @@
                 <div type="button" class="search-btn" onclick="openSearchPanel()">
                     <span class="ri-search-2-line"></span>
                 </div>
-                <button class="sign-in-btn" id="sign-in-btn">Sign In</button>
+                <button class="sign-in-btn" id="sign-in-btn">Login</button>
                 <div class="menu-btn" id="menu-btn">
                     <span class="ri-menu-2-fill"></span>
                 </div>
@@ -63,58 +69,58 @@
         </div>
     </header>
 
-    <div class="blur-bg-overlay"></div>
-    <div class="form-popup">
-        <span class="close-btn material-symbols-rounded">close</span>
-        <div class="form-box login">
-            <div class="form-content">
-                <h2>LOGIN</h2>
-                <form action="#">
-                    <div class="input-field">
-                        <input type="text" required>
-                        <label>Email</label>
+    <main id="main-content">
+        <div class="form-popup">
+            <div class="form-box login">
+                <div class="form-content">
+                    <h2>LOGIN</h2>
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <a href="#" class="forgot-pass-link">Forgot password?</a>
+                        <button type="submit">Log In</button>
+                    </form>
+                    <div class="bottom-link">
+                        Don't have an account?
+                        <a href="#" id="signup-link">Signup</a>
                     </div>
-                    <div class="input-field">
-                        <input type="password" required>
-                        <label>Password</label>
+                </div>
+            </div>
+            <div class="form-box signup">
+                <div class="form-content">
+                    <h2>SIGNUP</h2>
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" required>
+                            <label>Enter your email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" required>
+                            <label>Create password</label>
+                        </div>
+                        <div class="policy-text">
+                            <input type="checkbox" id="policy">
+                            <label for="policy">
+                                I agree the
+                                <a href="#" class="option">Terms & Conditions</a>
+                            </label>
+                        </div>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <div class="bottom-link">
+                        Already have an account?
+                        <a href="#" id="login-link">Login</a>
                     </div>
-                    <a href="#" class="forgot-pass-link">Forgot password?</a>
-                    <button type="submit">Log In</button>
-                </form>
-                <div class="bottom-link">
-                    Don't have an account?
-                    <a href="#" id="signup-link">Signup</a>
                 </div>
             </div>
         </div>
-        <div class="form-box signup">
-            <div class="form-content">
-                <h2>SIGNUP</h2>
-                <form action="#">
-                    <div class="input-field">
-                        <input type="text" required>
-                        <label>Enter your email</label>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" required>
-                        <label>Create password</label>
-                    </div>
-                    <div class="policy-text">
-                        <input type="checkbox" id="policy">
-                        <label for="policy">
-                            I agree the
-                            <a href="#" class="option">Terms & Conditions</a>
-                        </label>
-                    </div>
-                    <button type="submit">Sign Up</button>
-                </form>
-                <div class="bottom-link">
-                    Already have an account? 
-                    <a href="#" id="login-link">Login</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    </main>
 
     <div class="search-panel" id="search-panel">
         <div class="search-panel-contain">
@@ -144,5 +150,13 @@
             </div>
         </div>
     </div>
+
+    <div id="footer">
+        <span>We'll discuss later</span>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/romance.js"></script>
 </body>
+
 </html>
