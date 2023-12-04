@@ -37,6 +37,7 @@
 }
 .firstContent .descriptionBox h1{
   font-size: 20px;
+  text-align: start;
 }
 .firstContent .descriptionBox p{
   white-space: nowrap;
