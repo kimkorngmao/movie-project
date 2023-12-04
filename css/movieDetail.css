@@ -117,7 +117,23 @@ i{
 }
 
 @media (max-width: 590px){
+  .container{
+    padding: 0;
+  }
+  .firstContent{
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
   .firstContent .imgaeBox{
+    width: 100%;
+    max-width: 100%;
     min-width: 200px;
+  }
+  .descriptionBox{
+    margin-left: 0 !important;
+  }
+  .secondContent{
+    padding: 10px 0;
   }
 }
