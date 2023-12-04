@@ -372,12 +372,12 @@ p{
     height: 15vh;
     background-color: #192026;
 }
-h1{
+.c-center h1{
     padding-top: 20px;
     color: white;
     text-align: center;
 }
-h5{
+.c-center h5{
     color: whitesmoke;
     text-align: center;
 }
@@ -437,14 +437,14 @@ h5{
 .c-detail-box:hover{
     background-color: rgb(37, 46, 28);
 }
-h2{
+.c-bottom .c-box2 .c-box .c-text h2{
     padding-top: 28px;
     color: white; 
 }
-h6{
+.c-bottom .c-box2 .c-box .c-text h6{
     color: whitesmoke;
 }
-h3{
+.c-bottom .c-box2 .c-box .c-detail h3{
     padding-top: 10px;
     color: aliceblue;
     text-align: center;
