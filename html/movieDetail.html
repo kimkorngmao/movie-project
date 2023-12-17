@@ -68,6 +68,74 @@
     </header>
 
     <main id="main-content">
+        <!-- Play Trailer -->
+        <div class="trailer" id="trailer">
+            <div class="trailer-close">
+                <div class="trailer-close-text" >
+                    <b><p>Trailer</p></b>
+                </div>
+                <div class="trailer-close-icon" onclick="closeTrailer()">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                </div>
+            </div>
+            <div class="trailer-top">
+                <video controls>
+                    <source src="../video/The Perfect Motion Movie _ Official Trailer.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="trailer-bot">
+                <div class="trailer-bot-title">
+                    <div class="trailer-bot-title-icon">
+                        <span><i class="fa-solid fa-film"></i></span>&nbsp;&nbsp;<p>ទេពហត្ថា​</p>
+                    </div>
+                    <div class="trailer-bot-watch">
+                        <div class="watch-full">
+                            <p>Watch Full Movie</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trailer-bot-more">
+                    <div class="trailer-bot-date">
+                        <span><i class="fa-regular fa-clock"></i></span>&nbsp;&nbsp;<p>1 Apr, 2022</p>
+                    </div>
+                    <div class="trailer-bot-icon">
+                        <span><i class="fa-solid fa-ellipsis-vertical" onclick="openMorePopup()"></i></span>
+                       
+
+                        <div class="more-popup" id="more-popup">
+                            <div class="more-popup-box">
+                                <div class="more-popup-icon">
+                                    <span><i class="fa-solid fa-download"></i></span>
+                                </div>
+                                <div class="more-popup-text">
+                                    <p>Download</p>
+                                </div>
+                            </div>
+                            <div class="more-popup-box">
+                                <div class="more-popup-icon">
+                                    <span><i class="fa-regular fa-trash-can"></i></span>
+                                </div>
+                                <div class="more-popup-text">
+                                    <p>Remove</p>
+                                </div>
+                            </div>
+                            <div class="more-popup-box">
+                                <div class="more-popup-icon">
+                                    <span><i class="fa-solid fa-bookmark"></i></span>
+                                </div>
+                                <div class="more-popup-text">
+                                    <p>Save</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Play Trailer -->
         <!-- Write your code here. -->
         <div class="container">
             <div class="firstContent">
@@ -88,7 +156,7 @@
 
                     <i class="fa-solid fa-star"></i> 10/10
 
-                    <div class="playMovie">
+                    <div class="playMovie" onclick="openTrailer()">
                         <i class="fa-solid fa-play"></i>
                         Play Trailer
                     </div>
@@ -138,6 +206,7 @@
 
     <script src="../js/main.js"></script>
     <script src="../js/romance.js"></script>
+    <script src="../js/moviedetail.js"></script>
 </body>
 
 </html>

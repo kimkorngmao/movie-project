@@ -2,6 +2,7 @@
   width: 100%;
   margin-top: 30px;
   padding: 30px;
+  position: relative;
  
 }
 .firstContent{
@@ -115,6 +116,217 @@ i{
 }
 }
 
+.trailer{
+  width: 800px;
+  height: 550px;
+  border-radius: 9px;
+  margin-top: 300px;
+  margin-left: 630px;
+  background-color: rgb(56, 58, 60);
+  transform: translate(-50%, -50%) scale(1);
+  visibility: hidden; 
+  transition: transform 0.4s, top 0.4s;
+  position: absolute;
+  z-index: 10;
+}
+.trailer-close{
+  width: 100%;
+  height: 5%;
+  display: flex;
+}
+.trailer-close-text{
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trailer-close-text p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: white;
+}
+.trailer-close-text p:hover{
+  cursor: pointer;
+}
+.trailer-close-icon{
+  width: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trailer-close-icon span i{
+  font-size: 15px;
+  color: white;
+}
+.trailer-close-icon span:hover{
+  cursor: pointer;
+}
+.trailer-top{
+  width: 100%;
+  height: 80%;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+}
+.trailer-bot{
+  width: 100%;
+  height: 15%;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.trailer-bot-title{
+  width: 100%;
+  height: 60%;
+  display: flex;
+}
+.trailer-bot-title-icon{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.trailer-bot-title-icon:hover{
+  cursor: pointer;
+}
+.trailer-bot-title-icon span i{
+  font-size: 25px;
+  color: gainsboro;
+  padding-left: 15px;
+}
+.trailer-bot-title-icon p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: whitesmoke;
+}
+.trailer-bot-watch{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.watch-full{
+  width: 200px;
+  height: 45px;
+  background-color: rgb(135, 135, 128);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.watch-full:hover{
+  cursor: pointer;
+  background-color: rgb(186, 138, 138);
+}
+.watch-full p{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(230, 196, 196);
+}
+.trailer-bot-more{
+  width: 100%;
+  height: 40%;
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  display: flex;
+}
+.trailer-bot-date{
+  width: 95%;
+  height: 100%;
+  border-bottom-left-radius: 9px;
+  display: flex;
+  align-items: center;
+}
+.trailer-bot-date span i{
+  font-size: 20px;
+  color: rgb(202, 193, 193);
+  padding-left: 15px;
+}
+.trailer-bot-date p{
+  font-size: 15px;
+  color: rgb(202, 193, 193);
+}
+.trailer-bot-icon{
+  width: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trailer-bot-icon span i{
+  font-size: 15px;
+  color: white;
+}
+.trailer-bot-icon span i:hover{
+  cursor: pointer;
+}
+.trailer .trailer-top video{
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+}
+.open-trailer{
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 10;
+}
+
+
+
+
+.more-popup{
+  margin-top: 230px;
+  margin-left: 120px;
+  width: 300px;
+  height: 180px;
+  background-color: #1d4566;
+  border-radius: 9px;
+  position: absolute;
+  z-index: 10;
+  transform: translate(-50%, -50%) scale(0.1);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.more-popup-box{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  border-radius: 9px;
+}
+.more-popup-box:hover{
+  cursor: pointer;
+  background-color: gray;
+}
+.more-popup-icon{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more-popup .more-popup-box .more-popup-icon span{
+  color: whitesmoke;
+  font-size: 20px;
+}
+.more-popup-text{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.more-popup .more-popup-box .more-popup-text p{
+  color: white;
+  padding-top: 12px;
+}
+.open-more-popup{
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 10;
+  margin-top: 150px;
+  margin-left: 635px;
+}
 @media (max-width: 590px){
   .container{
     padding: 0;
