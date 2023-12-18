@@ -21,7 +21,8 @@ This repository holds the source code for a basic movie review website built for
 * JavaScript for dynamic behavior like submitting reviews and (optionally) filtering movies.
 
 **Running the project:**
-1. Clone the repository or download the zip file. 
+1. Clone the repository or download the zip file.
+```git clone https://github.com/kimkorngmao/movie-project.git```
 2. Open the `index.html` file in a web browser.
 
 **Additional Information:**
