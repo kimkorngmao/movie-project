@@ -22,7 +22,6 @@ This repository holds the source code for a basic movie review website built for
 
 **Running the project:**
 1. Clone the repository or download the zip file.
-```git clone https://github.com/kimkorngmao/movie-project.git```
 2. Open the `index.html` file in a web browser.
 
 **Additional Information:**
