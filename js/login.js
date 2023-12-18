@@ -12,6 +12,7 @@ hidePopupBtn.addEventListener("click", () => showPopupBtn.click());
 signupLoginLink.forEach(link => {
     link.addEventListener("click", (e) => {
         e.preventDefault();
-        formPopup.classListlink.id === 'signup-link' ? 'add' : 'remove';
+        // formPopup.classListlink.id === 'signup-link' ? 'add' : 'remove';
+        formPopup.classList.toggle("show-signup")
     });
 });
