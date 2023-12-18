@@ -12,6 +12,7 @@ This repository holds the source code for a basic movie review website built for
 
 **Features:**
 * View a list of movies with titles, release dates, and poster images.
+* View detail of a specific movie with trailer
 * Search movies by title
 * Filter movies by genre
 
