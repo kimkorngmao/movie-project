@@ -1,4 +1,6 @@
-## Simple Review Website
+**Please note: This website is made for educational purpose only, isn't connected to any real system.**
+
+## Simple Movie Review Website
 This repository holds the source code for a basic movie review website built for a university assignment using HTML, CSS, and JavaScript. 
 
 **Team members**
